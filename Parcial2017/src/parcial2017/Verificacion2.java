@@ -24,7 +24,7 @@ protected static void letraAleatoria(){
  
     //Llenamos el array con letras llamandolas por su valor en ASCII (25)+97
         for(int i=0; i<array.length; i++) {
-            int valorLetra = (r.nextInt(25)+97);
+            int valorLetra = (r.nextInt(25)+65);
             array[i] = (char) valorLetra;
         }
     

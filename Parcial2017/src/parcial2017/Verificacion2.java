@@ -16,15 +16,24 @@ import java.util.Random;
 public class Verificacion2 {
     //Comprobacion de letras
     
-protected int letraAleatoria(){ 
-
-    Random r = new Random();
-    return (r.nextInt(25)+97);
+protected static void letraAleatoria(){ 
+        
+    //Creamos el Random y un Array de 3 valores
+        Random r = new Random();
+        char array[] = new char[3];
+ 
+    //Llenamos el array con letras llamandolas por su valor en ASCII (25)+97
+        for(int i=0; i<array.length; i++) {
+            int valorLetra = (r.nextInt(25)+97);
+            array[i] = (char) valorLetra;
+        }
+    
+    //Imprimimos los tres caracteres
+        for(int i=0; i<array.length; i++){
+            System.out.print(array[i]+" ");
+        }
+        System.out.print("\n");
+       }
  
 }
-    
-public static void random (){
-    
 
-}
-}

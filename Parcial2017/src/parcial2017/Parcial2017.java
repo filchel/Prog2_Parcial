@@ -16,10 +16,10 @@ public class Parcial2017 {
     public static void main(String[] args) {
         
         //Llamada de verificacion de ususario y contraseña
-        Verificacion1 ver1 = new Verificacion1();
+        //Verificacion1 ver1 = new Verificacion1();
         
         Verificacion2.letraAleatoria();
-        ver1.validacion();
+        //ver1.validacion();
         
     }    
 }

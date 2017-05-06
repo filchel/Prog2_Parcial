@@ -17,9 +17,9 @@ public class Parcial2017 {
         
         //Llamada de verificacion de ususario y contraseña
         //Verificacion1 ver1 = new Verificacion1();
+        Verificacion2 ver2 = new Verificacion2();
         
-        Verificacion2.letraAleatoria();
         //ver1.validacion();
-        
+        ver2.letrasAleatoria();
     }    
 }

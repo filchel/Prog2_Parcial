@@ -12,30 +12,52 @@ import java.util.Random;
  * @author damian
  */
 public class Verificacion2 {
-    //Comprobacion de letras
-
-    protected static void letraAleatoria() {
-
-        //Creamos el Random y un Array de 3 valores
-        Random r = new Random();
-        char array1[] = new char[3];
-
-        //Llenamos el array con letras llamandolas por su valor en ASCII (25)+97
-        for (int i = 0; i < array1.length; i++) {
-            int valorLetra = (r.nextInt(25) + 65);
-            array1[i] = (char) valorLetra;
-            
-            if (array1[0] == array1[1] || array1[0] == array1[2]) {
-                array1[0] = (char) (r.nextInt(25) + 65);
-            } if (array1[1] == array1[2]) {
-                array1[2] = (char) (r.nextInt(25) + 65);
+    
+    //Variables
+    Random r = new Random();
+    char matriz[][] = new char[6][3];
+    
+    //Carga letras aleatorias en una matriz
+    protected void letrasAleatoria() {
+        
+        //Carga las letras en la matriz
+        for (int i = 0; i < matriz.length; i++) {
+            for (int j = 0; j < matriz[i].length; j++) {
+                
+                matriz[i][j] = (char) generaLetra();
             }
         }
-
-        //Imprimimos los tres caracteres
-        for (int i = 0; i < array1.length; i++) {
-            System.out.print(array1[i] + " ");
+        
+        
+        for (int i = 0; i < matriz.length; i++) {
+            for (int j = 0; j < matriz[i].length; j++) {
+                System.out.println(matriz[i][j]);
+            }
+            System.out.println();
         }
-        System.out.print("\n");
+    }
+    
+    private char generaLetra() {
+
+        int valorLetra = (r.nextInt(25) + 65);
+        
+        if(repetida(valorLetra)) {
+            valorLetra = generaLetra();
+        }
+        return (char) valorLetra;
+    }
+    
+    private Boolean repetida(int valorLetra) {
+        
+        Boolean repetida = false;
+        
+        for(char[] row : matriz) {
+            for(char col : row) {
+                if(col == valorLetra)
+                    repetida = true;
+                }
+            
+        }
+        return repetida;
     }
 }

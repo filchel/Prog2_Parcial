@@ -5,10 +5,26 @@
  */
 package parcial2017;
 
+
+import java.util.Random;
+
+
 /**
  *
- * @author federico
+ * @author damian
  */
 public class Verificacion2 {
-    //puto
+    //Comprobacion de letras
+    
+protected int letraAleatoria(){ 
+
+    Random r = new Random();
+    return (r.nextInt(25)+97);
+ 
+}
+    
+public static void random (){
+    
+
+}
 }

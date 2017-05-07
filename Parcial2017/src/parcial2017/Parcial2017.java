@@ -21,5 +21,9 @@ public class Parcial2017 {
         
         //ver1.validacion();
         ver2.letrasAleatoria();
+        
+        SeleccionClave selec1 = new SeleccionClave();
+        
+        selec1.cargaArray();
     }    
 }

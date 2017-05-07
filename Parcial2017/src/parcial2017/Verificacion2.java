@@ -16,7 +16,7 @@ public class Verificacion2 {
     //Variables
     Random r = new Random();
     char matriz[][] = new char[6][3];
-    
+   
     //Carga letras aleatorias en una matriz
     protected void letrasAleatoria() {
         

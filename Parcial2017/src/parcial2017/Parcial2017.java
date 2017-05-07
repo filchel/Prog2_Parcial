@@ -5,6 +5,8 @@
  */
 package parcial2017;
 
+import menu.alfa;
+
 /**
  *
  * @author federico
@@ -14,11 +16,17 @@ public class Parcial2017 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+
         
         //Llamada de verificacion de ususario y contraseña
         //Verificacion1 ver1 = new Verificacion1();
+        alfa ventana = new alfa();
+
+        ventana.setVisible(true);
+
         
-        Verificacion2.letraAleatoria();
+
+
         //ver1.validacion();
         
     }    

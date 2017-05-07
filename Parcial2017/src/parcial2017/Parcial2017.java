@@ -20,14 +20,20 @@ public class Parcial2017 {
         
         //Llamada de verificacion de ususario y contraseña
         //Verificacion1 ver1 = new Verificacion1();
+
         alfa ventana = new alfa();
 
         ventana.setVisible(true);
+        Verificacion2 ver2 = new Verificacion2();
 
         
 
 
         //ver1.validacion();
+        ver2.letrasAleatoria();
         
+        SeleccionClave selec1 = new SeleccionClave();
+        
+        selec1.cargaArray();
     }    
 }
